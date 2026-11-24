@@ -83,6 +83,10 @@ li{margin-bottom:1.2mm}
   /* entscheidend */
   display: flex;
   flex-direction: column;
+  border: 0.4mm solid var(--navy);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 5mm;
+  margin-bottom: 5mm;  
 }
 
 .header {
@@ -222,7 +226,7 @@ li{margin-bottom:1.2mm}
 
 @media print{
   body{margin:0}
-  .page{width:210mm;height:297mm;page-break-after:always;overflow:hidden}
+  .page{width:210mm;height:297mm;page-break-after:always;overflow:hidden;margin: 0 auto;}
   .page:last-child{page-break-after:auto}
   .job,.project,.section{break-inside:avoid}
   @page{size:A4;margin:0}
